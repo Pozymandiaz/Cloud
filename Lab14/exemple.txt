@@ -1,0 +1,5 @@
+az network dns record-set txt add-record \
+  --resource-group <nom_du_groupe> \
+  --zone-name mycustomdomain.com \
+  --record-set-name "@" \
+  --value "azure-site-verification=<verification_code>"
